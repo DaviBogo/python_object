@@ -1,6 +1,7 @@
 from person import Person
+from person2 import Person2
 
 p1 = Person('Davi', 22)
-p2 = Person('Érica', 21)
 
-print(p1.get_birth_date())
+p2 = Person2.by_birth_year('Érica', 2001)
+print(p2.name, p2.age)
