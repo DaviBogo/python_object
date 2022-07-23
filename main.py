@@ -1,7 +1,9 @@
 from person import Person
 
 p1 = Person('Davi', 22)
-p2 = Person('Érica', 21)
+p2 = Person.by_birth_year('Érica', 2001)
+print(p2.name, p2.age)
+print(p2.id_generator())
 
 p1.eat('apple')
 p1.speak('cars')

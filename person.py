@@ -1,5 +1,5 @@
 from datetime import datetime
-from unicodedata import name
+from random import randint
 
 
 class Person:
@@ -50,3 +50,13 @@ class Person:
 
     def get_birth_date(self):
         return self.current_year - self.age
+    
+    @classmethod
+    def by_birth_year(cls, name, year):
+        age = cls.current_year - year
+        return cls(name, age)
+    
+    @staticmethod
+    def id_generator():
+        rand = randint(10000, 19999)
+        return rand
