@@ -22,3 +22,7 @@ class Person2:
     def id_generator():
         rand = randint(10000, 19999)
         return rand
+    
+p2 = Person2.by_birth_year('Érica', 2001)
+print(p2.name, p2.age)
+print(p2.id_generator())
