@@ -1,4 +1,4 @@
-from objects import ShoppingCart, Product
+from lesson_7.objects import ShoppingCart, Product
 
 cart = ShoppingCart()
 
